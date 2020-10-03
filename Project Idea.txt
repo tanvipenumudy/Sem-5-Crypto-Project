@@ -1,3 +1,5 @@
+Possible Name: Securing Cloud Data Storage Using Cryptographic Techniques
+
 Idea: Add Progress Bar and Uploading Status to the Uploading Files.
 Add Authentication for Login
 Add Encryption and Decryption Techniques - for each format separately - Text, Image, Video, Word and PDF if possible using python (search on web)
