@@ -6,7 +6,7 @@ from resources import get_bucket, get_buckets_list
 
 app = Flask(__name__)
 Bootstrap(app)
-app.secret_key = 'secret'
+app.secret_key = 'MDlp+ObL6Bg0SArdX3vWIQGB163k4vKOKP/8OOnk'
 app.jinja_env.filters['datetimeformat'] = datetimeformat
 app.jinja_env.filters['file_type'] = file_type
 
