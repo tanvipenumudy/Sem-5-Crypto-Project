@@ -85,6 +85,7 @@ def files():
 
 
 @app.route('/enc_upload', methods=['POST'])
+@login_required
 def enc_upload():
     source = os.path.join(app_root,'uploads')
     if(not os.path.exists(source)):
@@ -116,6 +117,7 @@ def enc_upload():
     return redirect(url_for('files'))
 
 @app.route('/upload', methods=['POST'])
+@login_required
 def upload():
     file = request.files['file']
     if(file.filename==''):
@@ -139,6 +141,7 @@ def delete():
 
 
 @app.route('/download', methods=['POST'])
+@login_required
 def download():
     key = request.form['key']
     if('.enc' in key):
